@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="´pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        var callbackScesso = function(titulo, descricao) {
+            document.write('<h1>'+titulo+'</h1>')  
+            document.write('<p>'+descricao+'</p>')    
+        }
+        var callbackErro = function(erro) {
+            document.write('<h1>'+erro+'</h1>')
+        }
+
+        function exebirArtigo(callbackSucesso, callbackErro) {
+            if(true) {
+                callbackScesso('CallbackSucesso:', 'Dados Acessado com sucesso!')
+            }
+            else {
+                callbackErro('CallbackErro: Erro acessar os dados')
+            }
+        }
+        exebirArtigo(callbackScesso, callbackErro)
+       
+
+        
+</script>
+</body>
+</html>
+
+<!-- 
+var callbackScesso = function(titulo, descricao) {
+    document.write(titulo)
+
+    document.write(descricao)
+    
+}
+var callbackErro = function(erro) {
+    document.write(erro)
+}
+
+function exibirArtigo(id, callbackScesso, callbackErro) {
+    if(true) {
+        callbackScesso('Sucesso:', ' Succeso so acessar os dados')
+    }
+    else {
+        callbackErro('Erro ao acessar os dados')
+    }
+}
+exibirArtigo(1, callbackScesso, callbackErro) -->

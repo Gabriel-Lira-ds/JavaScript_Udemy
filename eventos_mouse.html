@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            background: red;
+        }
+    </style>
+    <script>
+        function acao1() {
+            alert('Elemento foi clicado!')
+        }
+
+        function acao2() {
+            alert('O curso do mouse deixou a regiao do elemento!')
+        }
+    </script>
+</head>
+<body>
+    <!-- 
+    onclick     'Quando clica em cima'
+    ondblclick   'Quando clica duas ves em cima'
+    onmouseup    'Quando soltar o click do mouse'
+    onmouseover  'Quando o mouse ficar em cima do elemento'
+    onmouseout    'Quando o mouse sair de cima do elemento'
+
+    -->
+    <div onclick="acao1()" onmouseout="acao2()" style="background: #ccc; height: 150px; width: 150px;">
+
+    </div>
+</body>
+</html>
+

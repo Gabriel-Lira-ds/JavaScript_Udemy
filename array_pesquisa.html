@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+    var lista_frutas = Array()
+
+    lista_frutas[0] = 'Banana'
+    lista_frutas[1] = 'Maçã'
+    lista_frutas[2] = 'Morango'
+    lista_frutas[4] = 'Uva'
+
+    lista_frutas.indexOf('Morango')
+
+    // PARA PESQUISA UM ELEMENTO NO ARRAY BASTA USAR O " .indexOf "
+
+    console.log(lista_frutas)
+
+
+    var pergunta = prompt('digite o itén de pesquisa!').toLocaleUpperCase()
+    document.write(pergunta)
+    var auxiliar = lista_frutas.indexOf(pergunta)
+    
+    if(auxiliar == -1) {
+        console.log('Elemento não existe no Array')
+    }
+    else {
+        console.log('Elemento está na posição '+auxiliar+' ')
+    }
+    </script>
+</body>
+</html>

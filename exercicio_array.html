@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio Array</title>
+
+    <script>
+        var lista = Array('Cadeira', 'Impressora', 'Garfo')
+        function adicionarObjetos() {
+            var objeto = document.getElementById('objeto').value
+
+            document.getElementById('objeto').value = ''
+            if(objeto === '') {
+                alert('Informe um valor válido')
+            }else {
+                if(lista.indexOf(objeto) !== -1) {
+                    alert('O valor já está no Array')
+                }else {
+                    lista.push(objeto)
+                    console.log(lista)
+                }
+            }
+        }
+
+        function ordenarObjetos() {
+            console.log(lista.sort())
+        }
+        
+    </script>
+</head>
+<body>
+    <label for="objeto">Escreva</label>
+
+    <input id="objeto" type="text" placeholder="Escreva algo">
+    <button onclick="adicionarObjetos()">Adicionar</button>
+    <button onclick="ordenarObjetos()">Ordenar</button>
+</body>
+</html>

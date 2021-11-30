@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>eventos teclado</title>
+    <script>
+        function acao1() {
+            alert('Evento disparado')
+        }
+    </script>
+</head>
+<body>
+    <!-- 
+    onkeydown  (É disparado antes que o caracter é exebido!)
+    onkeyup    (É disparado depois que o caracter é exebido!)
+    onkeyprass (É disparado antes que o caracter é exevido, porem se a tecla não tiver um valor, por exemplo o 'shift' o evento não é disparado!)
+    -->
+    <input onkeyup="acao1()" type="text">
+</body>
+</html> 

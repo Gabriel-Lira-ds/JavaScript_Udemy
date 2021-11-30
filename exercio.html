@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="´pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        var num1 = parseFloat(prompt('Digite um numero:'))
+        var operador = prompt('Digite o operador![SOMA / SUBTRACAO]').trim()
+        var num2 = parseFloat(prompt('Digite outro numero:'))
+        function calcular(num1, num2, operador) {
+            if(operador == 'soma') {
+                resultado = num1 + num2
+            }
+            if(operador == 'subtracao') {
+                resultado = num1 - num2
+            }
+            document.write('A '+operador+' de '+num1+' e '+num2+' é '+resultado+'')
+        }
+        calcular(num1, num2, operador)
+    </script>
+</body>
+</html>

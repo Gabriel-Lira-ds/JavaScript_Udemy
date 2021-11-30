@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="´pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+</head>
+<body>
+    <script>
+        data = new Date()
+        // document.write(data.getDate())
+        // document.write(' / ')
+        // document.write(data.getMonth() + 1) // Tem que somar + 1 porque o "getMonth" comta os meses de 0 a 11
+        // document.write(' / ')
+        // document.write(data.getFullYear())
+        // document.write('<hr />')
+
+        
+
+        // Adicionar ou Remover Dias!
+        document.write(data.toString())
+        document.write('<hr />')
+        data.setDate(data.getDate() + 2)
+        document.write(data.toString())
+        document.write('<br>  <br>  <br>  <br>')
+
+        
+
+        // Adicionar ou remover Mês!
+        document.write(data.toString())
+        document.write('<hr>')
+        data.setMonth(data.getMonth() - 2)
+        document.write(data.toString())
+        document.write('<br>  <br>  <br>  <br>')
+
+
+        // Adicionar ou remover Ano
+        document.write(data.toString())
+        document.write('<hr>')
+        data.setFullYear(data.getFullYear() + 2)
+        document.write(data.toString())
+        document.write('<br>  <br>  <br>  <br>')
+
+        //  Calculo de diferença entre datas
+
+        document.write(data.getTime()) // Milessegundos entre 1 de Janneiro de 1970 até a data atual!
+        document.write('<hr>')
+        document.write('<br><br><br><br>')
+        // Difereça de dias entre 1 de janeiro de 2021 e 1 Janeiro de 2022!
+
+        var data1 = new Date(2021, 0, 1)
+
+        var data2 = new Date(2022, 0, 1)
+
+        document.write(data1.toString())
+
+        document.write('<hr>')
+
+        document.write(data2.toString())
+        
+        document.write('<br><br><br>')
+
+        var milisegundos_entre_as_datas = (data1.getTime() - data2.getTime())*-1
+
+        // Quantidade de dias entre data1 e data2
+        document.write(milisegundos_entre_as_datas/1000/60/60/24)
+        
+    </script>
+</body>
+</html>

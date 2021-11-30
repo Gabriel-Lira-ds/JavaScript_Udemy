@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head lang="pt-br">
+        <meta charset="utf-8">
+        <title>JavaScript</title>
+
+        <script>
+            var lista_funcionarios = ['Viviane', 'Rosangelo', 'Minguel', 'Lucas', 'Fernando']
+
+            // função de Call Back
+            var f = function(valor, indice, arrey) {
+                console.log(valor, indice, arrey)
+            }
+
+            lista_funcionarios.forEach(f)
+
+            
+            // lista_funcionarios.forEach(function(valor, indice, arrey) {
+            //     console.log('Indice: ' +indice+ ' valor:')
+
+            //     if(valor == 'Lucas') {
+            //         arrey[indice] = 'novo valor'
+            //     }
+            // })
+            // console.log(lista_funcionarios)
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

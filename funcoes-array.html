@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function soma() {
+                var soma = 0
+                for(var i = 1 in arguments) {
+                    console.log(arguments[i])
+                    soma += arguments[i]
+                }
+                return soma
+            }
+
+            console.log('Soma: ' + soma(1, 51, 5, 5.4))
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

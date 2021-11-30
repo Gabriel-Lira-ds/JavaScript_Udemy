@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript</title>
+        <script>
+            var video = Array()
+                video[1] = Array()
+                    video[1]['nome'] = 'Fullmetal Alchemist'
+                    video[1]['categoria'] = 'Anime'
+                
+            function getVideo(video) {
+                // O script onde pode acontecer um erro fica dento do "try"
+                try {
+                    // lógica
+                    // http
+                    console.log(video[0]['nome'])
+                }
+
+
+                // O "catch" capitura o erro e trata o erro
+                catch(erro) { // O parâmetro "erro" representa o erro produzido
+                    console.log(erro)
+                    console.log('Agora sim podemos tratar esse erro')
+
+                    // O "throw" lança ecessão na aplicação! onde pode pode indicar o local do erro ou uma mensagem personlizada no erro!
+                    throw new Error('Ouve um erro mas não se preucupe, estamos trabalhando nisso!')
+                }
+
+                // O "finally" é onde fica o script para fializar de alguma forma o erro!
+                finally {
+                    console.log('Sempre passa por aqui (try / catch)')
+                }
+                console.log('A aplicação não morreu')
+            }
+        
+
+            getVideo(video)
+        </script>
+    </head>
+    <body>
+       
+    </body>
+</html>

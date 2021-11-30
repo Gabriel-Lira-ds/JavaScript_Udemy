@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script>
+        function acionarCampo() {
+            document.getElementById('campo').style.backgroundColor = 'yellow'   
+        }
+        function valiadarCampo() {
+            var valorCampo = document.getElementById('campo').value
+            if(valorCampo.length  <= 3) {
+                document.getElementById('campo').style.backgroundColor = 'red'
+            }
+            else {
+                document.getElementById('campo').style.backgroundColor = 'green'
+            }
+        }
+    </script>
+</head>
+<body>
+    <input id="campo" type="text" onfocus="acionarCampo()" onblur="valiadarCampo()">
+    
+</body>
+</html>

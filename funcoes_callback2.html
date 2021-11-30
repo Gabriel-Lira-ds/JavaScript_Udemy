@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Funcoes Callback</title>
+</head>
+<body>
+    <script>
+    function ExebirArtigo(id, callbacksucesso, callbackerro) {
+        if (id == 1) {
+            Sucesso('Funcoes de callback em js', 'Você digitou o numero 1')
+        }
+        if (id == 2) { 
+            Sucesso('Funcoes de callback em js', 'Você digitou o numero 2')
+        }
+        else {
+            Erro('Você digitou um numero diferente de 2!')
+        }
+
+    }
+    var Sucesso = function(titulo, descrição) {
+        document.write('<h1>' + titulo + '</h1>')
+        document.write('<hr>')
+        document.write('<p>' + descrição + '</p>')
+    }
+    var Erro = function(erro) {
+        document.write('<h1>' + erro + '</h1>')
+    }
+    var id = parseInt(prompt('Digite o numero do artigo: '))
+
+    ExebirArtigo(id, Sucesso, Sucesso)
+    </script>
+</body>
+</html>
