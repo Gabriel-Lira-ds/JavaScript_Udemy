@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            function DistribuirCaracter() {
+
+                // Selecionad o valor selecionado!
+                var caracter = document.getElementById('entrada').value
+
+                // Limapando o campo de digitação!
+                document.getElementById("entrada").value = ""
+
+                //  Limapar espaços em brancos nas extremidades!
+                caracter.trim()
+
+                switch (caracter) {
+                    case '1';
+                    case '2'
+                }
+
+                console.log(caracter)
+
+            }
+        </script>
+    </head>
+
+    <body>
+        <input 
+        type="text"
+        placeholder="Digite um caracter aqui" 
+        onkeyup="DistribuirCaracter()"
+        id="entrada">
+
+        <hr>
+
+        <span>Letras: </span>
+        <input type="text" disabled='disabled' id="apenas_letras"> 
+
+        <span>Números: </span>
+        <input type="text" disabled='disabled' id="apenas_números">
+    </body>
+</html>
