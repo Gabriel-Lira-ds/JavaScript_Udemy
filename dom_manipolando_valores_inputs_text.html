@@ -17,14 +17,26 @@
                 //  Limapar espaços em brancos nas extremidades!
                 caracter.trim()
 
-                switch (caracter) {
-                    case '1';
-                    case '2'
+                switch(caracter) {
+                    case '0':
+                    case '1':
+                    case '2':
+                    case '3':
+                    case '4':
+                    case '5':
+                    case '6':
+                    case '7':
+                    case '8':
+                    case '9':
+                    //adicionar o caracter no campo referente a números
+                    document.getElementById('apenas_numeros').value = caracter
+                    break;
+                    default:
+                        //adicionar o caracter no campo referente a letras
+                        document.getElementById('apenas_letras').value = caracter 
+                }
                 }
 
-                console.log(caracter)
-
-            }
         </script>
     </head>
 
@@ -41,6 +53,6 @@
         <input type="text" disabled='disabled' id="apenas_letras"> 
 
         <span>Números: </span>
-        <input type="text" disabled='disabled' id="apenas_números">
+        <input type="text" disabled='disabled' id="apenas_numeros">
     </body>
 </html>
